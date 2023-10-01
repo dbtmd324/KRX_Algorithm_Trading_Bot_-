@@ -1,0 +1,18 @@
+import pandas as pd
+import datetime as dt
+import logging
+
+def trade_func(
+    date: dt.date,
+    dict_df_result: dict[str, pd.DataFrame],
+    dict_df_position: dict[str, pd.DataFrame],
+    logger: logging.Logger,
+) -> list[tuple[str, int]]:
+
+    symbols_and_orders = [
+        ("주문 주식 단축코드 1", 주문 수량 1),
+        ("주문 주식 단축코드 2", 주문 수량 2),
+        ...
+    ]
+    
+    return symbols_and_orders
